@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do cartão de Crédito !!</title>
+    <link rel="stylesheet" href="/e-comerce/ecom.css">
+</head>
+<body>
+    
+    <section class="config">
+       
+        <head class="hd">
+            <ul> <!-- lista com com menu dos links que levam as suas respectivas paginas  -->
+                <a href="/e-comerce/index.html"><li style="font-weight: bold; ">Página inicial</li></a>
+                <a href="/e-comerce/modamsc.html"><li style="font-weight: bold; ">Moda Masculina</li></a> 
+                <a href="/e-comerce/modafem.html"><li style="font-weight: bold; ">Moda Feminina</li></a>
+                <a href="/e-comerce/carrinho.html"><li style="font-weight: bold;"> Carrinho de Compas</li></a>
+                
+            </ul>
+        </head> 
+        <div class="Ncartao"> <!--   -->
+            <h3 class="compra"> Insira os dados do Cartão abaixo !! </h3> <!--  mensagem para inserir os dados do caartao de credito  -->
+            <input type="radio" name="radsex" id="cred" checked> <!-- input com a opção de crédito marcada(checked)  -->
+            <label for="mdeb">Crédito</label>
+            <input type="radio" name="radsex" id="deb"> <!--  input com a opção de débito  -->
+            <label for="cred">Débito</label> <br><br>
+
+         <!-- </div>
+         <br> -->
+         <!-- <div class="dados"> -->  <!--  input para inserção dos dados de cartão de credito, cpf, codigo de sergurança do cartao e data de validade. -->
+            <input type="number" name="Cartaodecredito" id="cartaocredito"  placeholder="Insira o Número do cartão"> <br> <br>
+            <input type="number" name="CPF" id="CPF" placeholder="Insira o CPF do titular "> <br><br>
+            <input type="number" name="CVV" id="CVV" placeholder="Código de segurança"> <br><br>
+            <input type="date" name="data" id="data" placeholder="Data de validade" > <br><br>
+            <div>
+                
+            </div>
+            <button onclick="comprar()">Comprar</button> <!--  botão de comprar com a função comprar(), -->
+        </div> <br><br>
+        <div id="res"> <!--  div id res para utllização de saida de mensagem no javascript -->
+            
+        </div>
+       
+    </section>
+    
+
+    <script src="/e-comerce/ecom.js"></script>
+</body>
+</html>
